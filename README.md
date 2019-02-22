@@ -5,7 +5,7 @@
 This plugin is used to enhance the AMD packaging mode of webpack:
 
 1. Make `SplitChunks` to be AMD modules.
-2. Inject `SplitChunks` AMD module names to entry chunk  automatically.
+2. Inject `SplitChunks` AMD module names to entry chunk dependencies automatically.
 3. Make webpack replace the `root external(global variable)` correctly.
 
 ## Installation
