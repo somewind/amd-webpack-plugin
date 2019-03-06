@@ -7,7 +7,7 @@ This plugin is used to enhance the AMD packaging mode of webpack:
 1. Make `SplitChunks` to be AMD modules.
 2. Inject `SplitChunks` AMD module names to entry chunk dependencies automatically.
 3. Make webpack replace the `root external(global variable)` correctly.
-4. The Dynamic Import capability of webpack will be preserved
+4. The dynamic imports capability of webpack will be preserved
 
 ## Installation
 
@@ -94,7 +94,7 @@ import jquery from 'jquery'
 import d3 from 'd3'
 import lodash from 'lodash'
 
-// Dynamic Import will use Webpack Module Engine
+// dynamic imports will use webpack module engine
 // this chunk will not convert to AMD Module
 import(
   /* webpackChunkName: "asyc-import-data" */
