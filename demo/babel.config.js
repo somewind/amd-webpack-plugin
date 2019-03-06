@@ -7,5 +7,8 @@ module.exports = {
         useBuiltIns: 'entry'
       }
     ]
+  ],
+  plugins: [
+    '@babel/plugin-syntax-dynamic-import'
   ]
 }
