@@ -9,7 +9,8 @@
     "lib/"
   ],
   "scripts": {
-    "build": "webpack"
+    "build": "webpack --mode development",
+    "release": "webpack --mode production"
   },
   "dependencies": {
     "d3": "^5.9.1",

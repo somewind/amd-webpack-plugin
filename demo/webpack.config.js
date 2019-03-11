@@ -3,7 +3,6 @@ const AmdWebpackPlugin = require('amd-webpack-plugin')
 
 // webpack config
 module.exports = {
-  mode: 'development',
   devtool: false,
   entry: {
     'entry1': path.join(__dirname, 'src/entry1.js'),
