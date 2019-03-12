@@ -7,7 +7,8 @@ This plugin is used to enhance the AMD packaging mode of webpack:
 1. Make `SplitChunks` to be AMD modules.
 2. Inject `SplitChunks` AMD module names to entry chunk dependencies automatically.
 3. Make webpack replace the `root external(global variable)` correctly.
-4. The dynamic imports capability of webpack will be preserved
+4. The dynamic imports capability of webpack will be preserved.
+5. Can Change the `define` wrapper name.
 
 ## Installation
 
@@ -58,6 +59,10 @@ module.exports = {
   },
   plugins: [
     new AmdWebpackPlugin()
+    // equels
+    // new AmdWebpackPlugin({
+    //   wrapper: 'define'
+    // })
   ],
   optimization: {
     splitChunks: {
