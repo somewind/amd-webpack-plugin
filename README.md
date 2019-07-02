@@ -59,10 +59,20 @@ module.exports = {
   },
   plugins: [
     new AmdWebpackPlugin()
-    // equels
+    // The following options are used by default
     // new AmdWebpackPlugin({
-    //   wrapper: 'define'
+    //   wrapper: 'define',
+    //   hashedModuleIds: {
+    //      hashFunction: 'md4',
+    //      hashDigest: 'base64',
+    //      hashDigestLength: 16
+    //   }
     // })
+
+    // in webpack mode 'production'
+    // it will set chunkIds = 'named' automatically
+
+    // you can set hashedModuleIds = false to ignore
   ],
   optimization: {
     splitChunks: {
