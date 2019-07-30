@@ -3,13 +3,17 @@ define(["d3","vendor"], function(__WEBPACK_EXTERNAL_MODULE_d3__) { return /*****
 /******/ 	function webpackJsonpCallback(data) {
 /******/ 		var chunkIds = data[0];
 /******/ 		var moreModules = data[1];
-/******/ 		var executeModules = data[2];
+/******/ 		var externalDependencies = ["vendor","asyc-import-data"];
 /******/
 /******/ 		// add "moreModules" to the modules object,
 /******/ 		// then flag all "chunkIds" as loaded and fire callback
 /******/ 		var moduleId, chunkId, i = 0, resolves = [];
 /******/ 		for(;i < chunkIds.length; i++) {
 /******/ 			chunkId = chunkIds[i];
+/******/ 			if (!externalDependencies.includes(chunkId)) {
+/******/ 				if(parentJsonpFunction) parentJsonpFunction(data);
+/******/ 				return
+/******/ 			}
 /******/ 			if(installedChunks[chunkId]) {
 /******/ 				resolves.push(installedChunks[chunkId][0]);
 /******/ 			}
@@ -25,12 +29,7 @@ define(["d3","vendor"], function(__WEBPACK_EXTERNAL_MODULE_d3__) { return /*****
 /******/ 		while(resolves.length) {
 /******/ 			resolves.shift()();
 /******/ 		}
-/******/
-/******/ 		// add entry modules from loaded chunk to deferred list
-/******/ 		deferredModules.push.apply(deferredModules, executeModules || []);
-/******/
-/******/ 		// run deferred modules when all chunks ready
-/******/ 		return checkDeferredModules();
+/******/ 		// ignore deferred entry modules in AMD mode
 /******/ 	};
 /******/ 	function checkDeferredModules() {
 /******/ 		var result;
