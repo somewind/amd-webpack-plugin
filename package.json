@@ -13,7 +13,7 @@
     "changelog": "conventional-changelog -p angular -i CHANGELOG.md -s"
   },
   "devDependencies": {
-    "commitizen": "^3.0.2",
+    "commitizen": "^3.1.2",
     "conventional-changelog-cli": "^2.0.23",
     "cz-conventional-changelog": "^2.1.0",
     "eslint": "^5.16.0",
