@@ -1,5 +1,6 @@
 const path = require('path')
 const AmdWebpackPlugin = require('amd-webpack-plugin')
+const { CleanWebpackPlugin } = require('clean-webpack-plugin');
 
 // webpack config
 module.exports = {
@@ -25,9 +26,11 @@ module.exports = {
   },
   output: {
     filename: '[name].js',
+    chunkFilename: '[name]_[chunkhash:8].js',
     libraryTarget: 'amd'
   },
   plugins: [
+    new CleanWebpackPlugin(),
     new AmdWebpackPlugin()
   ],
   optimization: {

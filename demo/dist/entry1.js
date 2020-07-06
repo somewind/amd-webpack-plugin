@@ -1,4 +1,4 @@
-define(["three","vendor"], function(__WEBPACK_EXTERNAL_MODULE_three__) { return /******/ (function(modules) { // webpackBootstrap
+define(["three","vendor_eecffda3"], function(__WEBPACK_EXTERNAL_MODULE_three__) { return /******/ (function(modules) { // webpackBootstrap
 /******/ 	// install a JSONP callback for chunk loading
 /******/ 	function webpackJsonpCallback(data) {
 /******/ 		var chunkIds = data[0];
