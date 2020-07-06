@@ -1,6 +1,6 @@
 {
   "name": "amd-webpack-plugin",
-  "version": "1.0.17",
+  "version": "1.0.18",
   "license": "MIT",
   "description": "make split chunks to be AMD modules",
   "author": "somewind <neverstopsteps@gmail.com> (https://github.com/somewind)",
