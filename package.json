@@ -32,7 +32,8 @@
     "webpack",
     "plugin",
     "amd",
-    "amd-webpack-plugin"
+    "amd-webpack-plugin",
+    "requirejs"
   ],
   "bugs": "https://github.com/somewind/amd-webpack-plugin/issues",
   "homepage": "https://github.com/somewind/amd-webpack-plugin",
